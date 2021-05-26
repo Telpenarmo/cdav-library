@@ -34,3 +34,8 @@ clean:
 
 clean-dev:
 	rm -rf node_modules
+	
+gen-typings:
+	npm run build-declaration
+
+build-js-production-typed: gen-typings build-js-production

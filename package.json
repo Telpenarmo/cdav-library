@@ -10,7 +10,8 @@
 		"test": "./node_modules/.bin/karma start karma.conf.js",
 		"build-doc": "./node_modules/.bin/esdoc",
 		"lint": "eslint --ext .js src",
-		"lint:fix": "eslint --ext .js src --fix"
+		"lint:fix": "eslint --ext .js src --fix",
+		"build-declaration": "rm -f index.d.ts && npx tsc -p declaration.tsconfig.json"
 	},
 	"repository": {
 		"type": "git",
